@@ -1,0 +1,16 @@
+/* src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll-vertical {
+  0% {
+
+    transform: translateY(0);
+  }
+  100% {
+
+    transform: translateY(-100%);
+  }
+}
