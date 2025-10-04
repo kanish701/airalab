@@ -1,111 +1,114 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-// ...existing code...
+
+// It is a best practice in React to manage repeated elements with a data array.
+// This makes the code cleaner and easier to update.
+const serviceCards = [
+    {
+        bgImage: '/src/assets/abstract-3d-.jpg',
+        title: 'Build a scalable product with AI',
+        description: 'Easily scale your resources up and down based on business needs without hardware limitations.',
+        gridSpan: 'lg:col-span-3' // On large screens, this card will span 3 of 6 grid columns.
+    },
+    {
+        bgImage: '/src/assets/illustration.jpg',
+        title: 'Automate Workflows with AI',
+        description: 'Streamline your operations by automating repetitive tasks, freeing up your team for more strategic work.',
+        gridSpan: 'lg:col-span-3'
+    },
+    {
+        bgImage: '/src/assets/wave-particles-big.webp',
+        title: 'Data-driven Insights',
+        description: 'Turn complex data into actionable insights with AI-powered analytics and real-time dashboards.',
+        gridSpan: 'lg:col-span-2' // On large screens, this card spans 2 of 6 grid columns.
+    },
+    {
+        bgImage: '/src/assets/illustration.jpg',
+        title: 'Personalized Experiences',
+        description: 'Deliver tailored solutions to every customer using AI-driven recommendations and adaptive systems.',
+        gridSpan: 'lg:col-span-2'
+    },
+    {
+        bgImage: '/src/assets/wave-particles-big.webp',
+        title: 'Future-Ready Infrastructure',
+        description: 'Scale seamlessly and innovate faster with cloud-native AI solutions built for growth.',
+        gridSpan: 'lg:col-span-2'
+    }
+];
 
 const ServicesSection = () => {
-  // ...existing code...
-
   return (
-    <section className="py-20 bg-[#161515]">
+    <section className="py-16 md:py-24 bg-[#161515]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-12 md:mb-16"
         >
-          <h2 className="text-4xl font-bold text-white mb-6 text-left">Driven by Intelligence,<br />We Focused on</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center md:text-left">
+            Driven by Intelligence,<br />Focused on Results
+          </h2>
         </motion.div>
 
-        {/* Top Cards Section */}
-        <div className="flex flex-col gap-6 mb-10">
-          {/* Left: Top two cards, w-560 h-235 */}
-          <div className="col-span-1 md:col-span-2 flex gap-6">
-            <div className="bg-[url('/src/assets/abstract-3d-.jpg')] bg-cover bg-center p-6 flex flex-col justify-end 
-                text-left text-white shadow-lg w-[560px] h-[235px] max-w-full">
-
-              <h3 className="text-xl font-semibold mb-2">Build a scalable product with the help of AI</h3>
-              <p className="text-gray-300 text-sm">Easily scalable your resource up and down based on the business needs without hardware limitations.</p>
+        {/* --- RESPONSIVE CARD GRID --- */}
+        {/* This grid is 1 column on mobile and 6 columns on large screens. */}
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
+          {serviceCards.map((card, index) => (
+            <div
+              key={index}
+              className={`group relative rounded-xl overflow-hidden aspect-video ${card.gridSpan}`}
+            >
+              {/* Background Image */}
+              <div
+                style={{ backgroundImage: `url(${card.bgImage})` }}
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
+              />
+              {/* Gradient overlay for text readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+              
+              {/* Content */}
+              <div className="relative z-10 p-6 flex flex-col justify-end h-full text-white">
+                <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">{card.description}</p>
+              </div>
             </div>
-           <div className="bg-[url('/src/assets/illustration.jpg')] bg-cover bg-center p-6 flex flex-col justify-end 
-                text-left text-white shadow-lg w-[560px] h-[235px] max-w-full">
-
-              <h3 className="text-xl font-semibold mb-2">Automate Workflows with AI</h3>
-              <p className="text-gray-300 text-sm">Easily scalable your resource up and down based on the business needs without hardware limitations.</p>
-            </div>
-          </div>
-          {/* Right: Bottom three cards, 3rd/5th w-340 h-235, 4th w-520 h-235 */}
-          <div className="flex gap-6">
-           <div className="bg-[url('/src/assets/wave-particles-big.webp')] bg-cover bg-center p-6 flex flex-col justify-end 
-                text-left text-white shadow-lg w-[340px] h-[235px] max-w-full">
-              <h3 className="text-xl font-semibold mb-2">Build a scalable product with the help of AI</h3>
-              <p className="text-gray-300 text-sm">Turn complex data into actionable insights with AI-powered analytics and real-life dashboards.</p>
-            </div>
-     <div className="bg-[url('/src/assets/illustration.jpg')] bg-cover bg-center p-6 flex flex-col justify-end 
-                text-left text-white shadow-lg w-[520px] h-[235px] max-w-full">
-              <h3 className="text-xl font-semibold mb-2">Personalized Experiences at Scale</h3>
-              <p className="text-gray-300 text-sm">Deliver tailored solutions to every customer using AI-driven recommendations and adaptive systems.</p>
-            </div>
-        <div className="bg-[url('/src/assets/wave-particles-big.webp')] bg-cover bg-center p-6 flex flex-col justify-end 
-                text-left text-white shadow-lg w-[340px] h-[235px] max-w-full">
-              <h3 className="text-xl font-semibold mb-2">Future-Ready Infrastructure</h3>
-              <p className="text-gray-300 text-sm">Scale seamlessly and innovate faster with cloud-native AI solutions built for growth.</p>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Middle Section */}
-        <div className="text-center my-20 pt-16">
-          <h3 className="text-3xl font-semibold text-white mb-2">Serving industries that demand speed and scale.</h3>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">We specialize in industries where high performance matters most.</p>
+        {/* --- MIDDLE SECTION --- */}
+        <div className="text-center my-16 md:my-24 py-8">
+          <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
+            Serving industries that demand speed and scale.
+          </h3>
+          <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
+            We specialize in industries where high performance and reliability matter most.
+          </p>
         </div>
 
-        {/* Bottom Grid Section */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 text-center">
-          <Link
-            to="/capabilities/ai-fundamentals"
-            className="text-white text-5xl font-bold hover:text-yellow-400 transition-colors"
-          >
+        {/* --- BOTTOM GRID SECTION --- */}
+        {/* This grid adapts from 2 to 3 columns and text size is responsive. */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 text-center">
+          <Link to="/capabilities/ai-fundamentals" className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold hover:text-yellow-400 transition-colors">
             Development
           </Link>
-
-          <Link
-            to="/capabilities/ai-freshers-course"
-            className="text-white text-5xl font-bold hover:text-yellow-400 transition-colors"
-          >
+          <Link to="/capabilities/ai-freshers-course" className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold hover:text-yellow-400 transition-colors">
             SaaS
           </Link>
-
-          <Link
-            to="/capabilities/ai-bootcamps"
-            className="text-white text-5xl font-bold hover:text-yellow-400 transition-colors"
-          >
+          <Link to="/capabilities/ai-bootcamps" className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold hover:text-yellow-400 transition-colors">
             Dashboards
           </Link>
-
-          <Link
-            to="/capabilities/prompt-engineering"
-            className="text-white text-5xl font-bold hover:text-yellow-400 transition-colors"
-          >
+          <Link to="/capabilities/prompt-engineering" className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold hover:text-yellow-400 transition-colors">
             Predictive Analysis
           </Link>
-
-          <Link
-            to="/capabilities/ai-agents"
-            className="text-white text-5xl font-bold hover:text-yellow-400 transition-colors"
-          >
+          <Link to="/capabilities/ai-agents" className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold hover:text-yellow-400 transition-colors">
             AI Agents
           </Link>
-
-          <Link
-            to="/capabilities/custom-solutions"
-            className="text-white text-5xl font-bold hover:text-yellow-400 transition-colors"
-          >
+          <Link to="/capabilities/custom-solutions" className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold hover:text-yellow-400 transition-colors">
             Custom Solutions
           </Link>
         </div>
-
       </div>
     </section>
   );

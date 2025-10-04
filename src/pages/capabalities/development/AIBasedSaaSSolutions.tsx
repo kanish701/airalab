@@ -7,7 +7,7 @@ import predictiveImg from '../../../assets/energy-industry-powerbi-epcgroup.png'
 const AIBasedSaaSSolutions = () => {
 
         return (
-            <div className="bg-gradient-to-br from-[#191924] via-[#181818] to-[#232323] min-h-screen text-white pt-16 pb-16 px-2 md:px-0">
+            <div className="bg-[#161515] min-h-screen text-white pt-16 pb-16 px-2 md:px-0">
                 {/* Breadcrumb */}
                 <div className="text-gray-400 text-xs pt-4 pl-6">Home | Capabilities | Development</div>
 
@@ -67,9 +67,9 @@ const AIBasedSaaSSolutions = () => {
                             <div className="mb-3">
                                 <span className="font-bold text-white">What We Offer</span>
                                 <ul className="list-disc list-inside text-gray-300 text-base mt-2 space-y-1 pl-2">
-                                    <li><span className="text-blue-400 font-semibold">Trend Forecasting</span> – Anticipate market changes and consumer behavior.</li>
-                                    <li><span className="text-red-400 font-semibold">Risk Detection</span> – Identify anomalies like fraud or equipment failures early.</li>
-                                    <li><span className="text-green-400 font-semibold">Business Optimization</span> – Use predictive models to improve sales, operations, and decision-making.</li>
+                                    <li><span className="text-yellow-300 font-semibold">Trend Forecasting</span> – Anticipate market changes and consumer behavior.</li>
+                                    <li><span className="text-yellow-300 font-semibold">Risk Detection</span> – Identify anomalies like fraud or equipment failures early.</li>
+                                    <li><span className="text-yellow-300 font-semibold">Business Optimization</span> – Use predictive models to improve sales, operations, and decision-making.</li>
                                     <li><span className="text-yellow-300 font-semibold">AI Models</span> – Leveraging machine learning, regression models, and deep learning for accurate predictions.</li>
                                 </ul>
                             </div>

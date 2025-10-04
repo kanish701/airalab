@@ -30,7 +30,7 @@ const coreValues = [
 
 const WhyAiraLabs = () => (
   // CHANGED: Increased top padding from py-12 to pt-32 to create space for a header
-  <div className="min-h-screen bg-gradient-to-br from-[#191924] via-[#18181c] to-[#232323] text-white pt-32 pb-12 px-4">
+  <div className="min-h-screen bg-[#161515] text-white pt-32 pb-12 px-4">
     <div className="max-w-5xl mx-auto">
       {/* Breadcrumb */}
       <div className="text-gray-400 text-xs mb-2">Home / Company / Contact us</div>
@@ -42,7 +42,7 @@ const WhyAiraLabs = () => (
         </div>
       </div>
       {/* Mission & Vision */}
-      <div className="bg-gradient-to-r from-[#232323] to-[#232323]/80 rounded-xl mt-6 mb-10 flex flex-col md:flex-row gap-6 p-6 shadow-lg border border-white/10">
+      <div className="bg-gradient-to-r from-[#232323] to-[#232323]/80 mt-6 mb-10 flex flex-col md:flex-row gap-6 p-6 shadow-lg border border-white/10">
         <div className="flex-1 flex flex-col gap-2">
           <div className="font-semibold text-yellow-400 text-lg mb-1 flex items-center gap-2">
             <Lightbulb className="w-5 h-5 text-yellow-400" /> Our Mission:
