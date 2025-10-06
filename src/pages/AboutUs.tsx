@@ -46,7 +46,7 @@ const AboutUs = () => {
 
 
   return (
-    <div className="pt-8 bg-[#181818] min-h-screen">
+    <div className="pt-8 bg-[#161515] min-h-screen">
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="text-gray-400 text-sm mb-4 mt-2">Home / Company / About Us</nav>
@@ -69,16 +69,16 @@ const AboutUs = () => {
       <section className="py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
-            <span className="text-4xl font-bold text-white underline decoration-blue-500 decoration-4">Our</span>
+            <span className="text-4xl font-bold text-white decoration-4">Our</span>
             <span className="block text-4xl font-light text-gray-300 mt-2">Team Members</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl flex flex-col items-center shadow-lg overflow-hidden">
                 <div className="flex-1 flex flex-col items-center justify-center py-6">
-                  <img src={member.img} alt={member.name} className="w-28 h-28 object-contain mb-2" />
+                  <img src={member.img} alt={member.name} className="w-28 h-40 object-contain mb-2" />
                 </div>
-                <div className="w-full bg-[#232323] flex items-center justify-between px-4 py-3">
+                <div className="w-full bg-[#161515] flex items-center justify-between px-4 py-3">
                   <div className="flex flex-col text-left">
                     <span className="text-white font-semibold text-base leading-tight">{member.name}</span>
                     <span className="text-white text-sm leading-tight">{member.role}</span>
@@ -95,8 +95,8 @@ const AboutUs = () => {
 
       {/* Our Values */}
       <section className="py-8">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-white mb-8 text-center">Our Values</h2>
+        <div className="max-w-7xl mx-auto px-4 pt-10">
+          <h2 className="text-4xl font-bold text-white mb-8 text-left">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {/* Left column: Collaboration (large card) */}
             <div className="md:col-span-1 flex flex-col justify-between">

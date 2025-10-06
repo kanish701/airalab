@@ -58,12 +58,12 @@ const WhyAiraLabs = () => (
       </div>
       {/* Core Values */}
       <div className="mt-8">
-        <div className="text-gray-300 text-2xl font-bold mb-6 tracking-tight">Core Values</div>
+        <div className="text-gray-300 text-3xl font-bold mb-6 tracking-tight">Core Values</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
           {coreValues.map(({ icon: Icon, title, desc }) => (
             <div key={title} className={`rounded-2xl p-6 bg-[#232323]/90 shadow-lg border border-white/10 flex flex-col items-start gap-2 hover:scale-[1.03] transition-transform group`}>
               {/* CHANGED: Replaced the gradient background with a subtle, consistent background color */}
-              <div className={`bg-white/5 p-2 rounded-lg mb-2 shadow group-hover:scale-110 transition-transform`}>
+              <div className={`bg-white/5 p-2 mb-2 shadow group-hover:scale-110 transition-transform`}>
                 <Icon className="w-6 h-6 text-white" />
               </div>
               <div className="text-lg font-bold text-white mb-1">{title}</div>
