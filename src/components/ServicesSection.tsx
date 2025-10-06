@@ -11,7 +11,7 @@ const serviceCards = [
         gridSpan: 'lg:col-span-3' // On large screens, this card will span 3 of 6 grid columns.
     },
     {
-        bgImage: '/dist/assets/illustration.jpg',
+        bgImage: '/dist/assets/wave-function-img.jpeg',
         title: 'Automate Workflows with AI',
         description: 'Streamline your operations by automating repetitive tasks, freeing up your team for more strategic work.',
         gridSpan: 'lg:col-span-3'
@@ -23,13 +23,13 @@ const serviceCards = [
         gridSpan: 'lg:col-span-2' // On large screens, this card spans 2 of 6 grid columns.
     },
     {
-        bgImage: '/dist/assets/illustration.jpg',
+        bgImage: '/dist/assets/illustration001-BhbiebjC.png',
         title: 'Personalized Experiences',
         description: 'Deliver tailored solutions to every customer using AI-driven recommendations and adaptive systems.',
         gridSpan: 'lg:col-span-2'
     },
     {
-        bgImage: '/src/assets/wave-particles-big.webp',
+        bgImage: '/dist/assets/wave-particles-big-Bylh26N0.webp',
         title: 'Future-Ready Infrastructure',
         description: 'Scale seamlessly and innovate faster with cloud-native AI solutions built for growth.',
         gridSpan: 'lg:col-span-2'
