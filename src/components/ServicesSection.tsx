@@ -5,31 +5,31 @@ import { Link } from 'react-router-dom';
 // This makes the code cleaner and easier to update.
 const serviceCards = [
     {
-        bgImage: '/dist/assets/abstract-3d--Bs_N9OVD.jpg',
+        bgImage: '/assets/abstract-3d--Bs_N9OVD.jpg',
         title: 'Build a scalable product with AI',
         description: 'Easily scale your resources up and down based on business needs without hardware limitations.',
         gridSpan: 'lg:col-span-3' // On large screens, this card will span 3 of 6 grid columns.
     },
     {
-        bgImage: '/dist/assets/wave-function-img.jpeg',
+        bgImage: '/dist/assets/illustration.jpg',
         title: 'Automate Workflows with AI',
         description: 'Streamline your operations by automating repetitive tasks, freeing up your team for more strategic work.',
         gridSpan: 'lg:col-span-3'
     },
     {
-        bgImage: '/dist/assets/wave-particles-big-Bylh26N0.webp',
+        bgImage: '/assets/wave-particles-big-Bylh26N0.webp',
         title: 'Data-driven Insights',
         description: 'Turn complex data into actionable insights with AI-powered analytics and real-time dashboards.',
         gridSpan: 'lg:col-span-2' // On large screens, this card spans 2 of 6 grid columns.
     },
     {
-        bgImage: '/dist/assets/illustration001-BhbiebjC.png',
+        bgImage: '/dist/assets/illustration.jpg',
         title: 'Personalized Experiences',
         description: 'Deliver tailored solutions to every customer using AI-driven recommendations and adaptive systems.',
         gridSpan: 'lg:col-span-2'
     },
     {
-        bgImage: '/dist/assets/wave-particles-big-Bylh26N0.webp',
+        bgImage: '/src/assets/wave-particles-big.webp',
         title: 'Future-Ready Infrastructure',
         description: 'Scale seamlessly and innovate faster with cloud-native AI solutions built for growth.',
         gridSpan: 'lg:col-span-2'
