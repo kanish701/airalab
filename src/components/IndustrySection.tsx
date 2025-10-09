@@ -14,7 +14,7 @@ export default function IndustrySection() {
         },
         {
             image: DemoImage,
-            title: "Dashboard Designing",
+            title: "Dashboard",
             description: "Engaging dashboards with intuitive data visualizations and seamless user experiences.",
         }
     ];
