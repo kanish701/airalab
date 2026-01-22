@@ -158,7 +158,7 @@ const Resources = () => {
 	return (
 		<div className="bg-[#161515] min-h-screen text-white pt-16 pb-16 px-2 md:px-0">
 			{/* Breadcrumb */}
-			<div className="text-gray-400 text-sm pt-9 pl-6">Home | Resources</div>
+			{/* <div className="text-gray-400 text-sm pt-9 pl-6">Home | Resources</div> */}
 
 			{/* Page Title & Description */}
 			<div className="max-w-5xl mx-auto mt-4 mb-8 text-center p-8">

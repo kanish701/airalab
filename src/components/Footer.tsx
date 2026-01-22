@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // It's a good practice to manage link data in an array for easier updates.
 const footerLinks = [
   {
-    title: "Why Aira Labs?",
+    title: "Why AIyutham?",
     links: [
       { name: 'About Us', path: '/aboutus' },
       { name: 'Contact Us', path: '/contactus' },

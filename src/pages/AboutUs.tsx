@@ -9,10 +9,10 @@ import valueimage4 from '../assets/wave-particles-big.webp'
 
 const AboutUs = () => {
   const teamMembers = [
-    { name: 'Jyothikumaran', role: 'Founder & CEO', linkedin: '#', img: avatar },
-    { name: 'Karthyan', role: 'Founder & CTO', linkedin: '#', img: avatar },
-    { name: 'Arvindh Jyothikumaran', role: 'Founder', linkedin: '#', img: avatar },
-    { name: 'Adithya Jyothikumaran', role: 'Founder', linkedin: '#', img: avatar },
+    { name: 'Prabhu Lingam', role: 'Founder & CEO', linkedin: '#', img: avatar },
+    { name: '', role: 'Founder & CTO', linkedin: '#', img: avatar },
+    { name: '', role: 'Founder', linkedin: '#', img: avatar },
+    { name: '', role: 'Founder', linkedin: '#', img: avatar },
   ];
 
   const values = [

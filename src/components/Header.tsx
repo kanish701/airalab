@@ -5,6 +5,7 @@ import {
   AirVent
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import AIyutham from '../assets/AI yutham og crop-Photoroom.png'
 
 // --- DATA (no changes here) ---
 const capabilitiesData = [
@@ -55,7 +56,7 @@ const companyData = [
     href: '/company/contact-us'
   },
   {
-    heading: 'Why AIra Labs',
+    heading: 'Why AIyutham',
     icon: AirVent,
     href: '/company/why-aira-labs'
   }
@@ -152,10 +153,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center min-w-[180px]">
             <Link to="/" className="flex items-center space-x-2 group">
-              <div className="w-8 h-8 bg-[#FFD700] rounded-xl flex items-center justify-center shadow group-hover:scale-105 transition-transform">
-                <Bot className="w-5 h-5 text-[#161515] drop-shadow" />
-              </div>
-              <span className="text-2xl font-extrabold text-white tracking-tight group-hover:text-yellow-400 transition-colors">AIra</span>
+              <img src={AIyutham} alt="AIyutham" className="h-12 w-auto group-hover:scale-105 transition-transform" />
             </Link>
           </div>
 

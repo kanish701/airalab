@@ -1,9 +1,9 @@
 // src/components/ImageScroller.tsx
 
 import { useState, useEffect } from 'react';
-import Screenshot1 from '../assets/dashboarddesign (1).jpeg';
-import Screenshot2 from '../assets/dashboarddesign (2).jpeg';
-import Screenshot3 from '../assets/dashboarddesign (3).jpeg';
+import Screenshot1 from '../assets/DAshboarddemoimage.jpeg';
+import Screenshot2 from '../assets/developmentsiteimage.jpeg';
+import Screenshot3 from '../assets/innovativedesignimage.jpeg';
 
 const ImageScroller = () => {
     const images = [Screenshot1, Screenshot2, Screenshot3];
@@ -23,7 +23,7 @@ const ImageScroller = () => {
 
     return (
         // This is the container that creates the "window" effect. It MUST have overflow-hidden.
-        <div className="h-[350px] w-[600px] bg-gray-950 rounded-b-3xl overflow-hidden relative">
+        <div className="h-[450px] w-[600px] bg-gray-950 rounded-b-3xl overflow-hidden relative">
             {images.map((image, index) => (
                 <img
                     key={index}

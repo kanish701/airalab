@@ -43,25 +43,25 @@ const ContactUs = () => {
 							{/* Call Us */}
 							<div className="bg-[#232323] rounded-xl p-6 flex flex-col gap-2 shadow border border-white/10">
 								<div className="font-bold text-xl mb-2 text-white">Call Us</div>
-								<div className="text-gray-300 text-sm mb-2">Speak directly with our team.<br />Mon-Sat, 9 AM - 7 PM IST<br />Ph.no: +91 9626701000</div>
+								<div className="text-gray-300 text-sm mb-2">Speak directly with our team.<br />Mon-Sat, 9 AM - 7 PM IST<br />Ph.no: +91 9585521000</div>
 								<a href="tel:+919626701000" className="text-white text-sm font-semibold hover:underline">Call Now</a>
 							</div>
 							{/* WhatsApp */}
 							<div className="bg-[#232323] rounded-xl p-6 flex flex-col gap-2 shadow border border-white/10">
 								<div className="font-bold text-xl mb-2 text-white">WhatsApp</div>
-								<div className="text-gray-300 text-sm mb-2">Quick responses on WhatsApp.<br />Ph.no: +91 9626701000<br />Instant messaging available</div>
-								<a href="https://wa.me/919626701000" target="_blank" rel="noopener noreferrer" className="text-white text-sm font-semibold hover:underline">Chat Now</a>
+								<div className="text-gray-300 text-sm mb-2">Quick responses on WhatsApp.<br />Ph.no: +91 9585521666<br />Instant messaging available</div>
+								<a href="https://wa.me/919042665678" target="_blank" rel="noopener noreferrer" className="text-white text-sm font-semibold hover:underline">Chat Now</a>
 							</div>
 							{/* Email Us */}
 							<div className="bg-[#232323] rounded-xl p-6 flex flex-col gap-2 shadow border border-white/10">
 								<div className="font-bold text-xl mb-2 text-white">Email Us</div>
-								<div className="text-gray-300 text-sm mb-2">Detailed inquiries welcome<br />hello@alralabs.co.in<br />Response within 24 hours</div>
-								<a href="mailto:hello@alralabs.co.in" className="text-white text-sm font-semibold hover:underline">Send Mail</a>
+								<div className="text-gray-300 text-sm mb-2">Detailed inquiries welcome<br />hello@AIyuthamgmail.com<br />Response within 24 hours</div>
+								<a href="mailto:hello@AIyuthamgmail.com" className="text-white text-sm font-semibold hover:underline">Send Mail</a>
 							</div>
 							{/* Visit Us */}
 							<div className="bg-[#232323] rounded-xl p-6 flex flex-col gap-2 shadow border border-white/10">
 								<div className="font-bold text-xl mb-2 text-white">Visit Us</div>
-								<div className="text-gray-300 text-sm mb-2">Meet us at our Coimbatore office<br />AI Labs Innovation Center<br />Mon-Sat, 9 AM - 7 PM IST</div>
+								<div className="text-gray-300 text-sm mb-2">Meet us at our Coimbatore office<br />AIyutham Innovation Center<br />Mon-Sat, 9 AM - 7 PM IST</div>
 								<a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-white text-sm font-semibold hover:underline">Get Directions</a>
 							</div>
 						</div>
