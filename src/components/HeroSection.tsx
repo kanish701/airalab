@@ -7,7 +7,7 @@ const cn = (...classes: Array<string | false | null | undefined>): string =>
 
 export default function HeroSection() {
     return (
-        <section className="relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden bg-[#0a0a0a] selection:bg-yellow-500/30">
+        <section className="relative flex flex-col items-center justify-center min-h-screen px-6 pt-0 pb-20 overflow-hidden bg-[#0a0a0a] selection:bg-yellow-500/30">
             
             {/* --- BACKGROUND ELEMENTS --- */}
             {/* Grid Pattern */}
@@ -66,12 +66,12 @@ export default function HeroSection() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
                     >
-                        <button className="group relative px-8 py-4 bg-[#FFD700] hover:bg-[#FCD34D] text-black font-bold rounded-xl transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,215,0,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,215,0,0.5)]">
+                        <a href="tel:+919585512666" className="group relative px-8 py-4 bg-[#FFD700] hover:bg-[#FCD34D] text-black font-bold rounded-xl transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,215,0,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,215,0,0.5)]">
                             <span className="flex items-center gap-2">
                                 Book Intro Call
                                 <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                             </span>
-                        </button>
+                        </a>
                         
                         <button className="px-8 py-4 text-white transition-all duration-300 border border-gray-800 bg-white/5 hover:bg-white/10 rounded-xl hover:border-gray-600">
                             View Demo
@@ -107,7 +107,7 @@ export default function HeroSection() {
                                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
                                 </div>
                                 <div className="flex-1 px-4 py-1.5 text-xs text-gray-500 text-center bg-black/20 rounded-md font-mono border border-white/5">
-                                    AIyutham/demo
+                                    AIyutham
                                 </div>
                             </div>
 

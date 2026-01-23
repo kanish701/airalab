@@ -19,6 +19,7 @@ import Static from './pages/capabalities/dashboard/Static';
 import Dynamic from './pages/capabalities/dashboard/Dynamic';
 import Interactive from './pages/capabalities/dashboard/Interactive';
 import WhyAiraLabs from './pages/WhyAiraLabs';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/resources" element={<Resources />} />
           {/* <Route path="/products" element={<Products />} /> */}
-          <Route path="/whyairalabs" element={<WhyAiraLabs />} />
+          <Route path="/why-aiyutham" element={<WhyAiraLabs />} />
 
           {/* ----- Capabalities -> Training ----- */}
           <Route path='/capabilities/ai-fundamentals' element={<AIFundamentals />} />
@@ -52,13 +53,14 @@ function App() {
           <Route path='/capabilities/interactive' element={<Interactive />} />
 
           {/* ----- Capabilities -> Company ----- */}
-          <Route path="/company/why-aira-labs" element={<WhyAiraLabs/>} />
+          <Route path="/company/why-aiyutham" element={<WhyAiraLabs/>} />
           <Route path="/company/about-us" element={<AboutUs/>} />
           <Route path="/company/careers" element={<Careers />} />
           <Route path="/company/contact-us" element={<ContactUs />} />
 
         </Routes>
         <Footer />
+        <ScrollToTop />
       </div>
     </Router>
   );

@@ -89,7 +89,7 @@ export default function IndustrySection() {
                         <motion.div
                             key={index}
                             variants={cardVariants}
-                            className="group relative flex flex-col h-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-yellow-500/30 hover:shadow-2xl hover:shadow-yellow-500/10"
+                            className="group relative flex flex-col h-full bg-white/5 backdrop--sm border border-white/10 rounded-2xl p-4 overflow-hidden transition-all duration-500 hover:bg-white/10 hover:border-yellow-500/30 hover:shadow-2xl hover:shadow-yellow-500/10"
                         >
                             {/* Image Container */}
                             <div className="relative w-full aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-gray-900">
