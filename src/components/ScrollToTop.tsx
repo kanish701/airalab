@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const location = useLocation();
 
   // Toggle visibility based on scroll position
   const toggleVisibility = () => {
@@ -28,6 +30,29 @@ const ScrollToTop = () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
   }, []);
+
+  // Scroll to top on route change
+  useEffect(() => {
+    // Use multiple techniques to reliably reset scroll after navigation:
+    // 1) immediate scroll, 2) reset document/body, 3) fallback after a short delay
+    try {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    } catch (e) {
+      // ignore
+    }
+    try {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    } catch (e) {
+      // ignore
+    }
+    const t = window.setTimeout(() => {
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      } catch (e) {}
+    }, 50);
+    return () => window.clearTimeout(t);
+  }, [location.pathname]);
 
   return (
     <AnimatePresence>
